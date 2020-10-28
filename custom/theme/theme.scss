@@ -1,0 +1,168 @@
+@use 'metal';
+
+@font-face {
+  font-family: "Glass Houses";
+  src: url("/fonts/glashou.ttf");
+}
+
+body {
+  color: #fff;
+  background: #222;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.preshowscreen-component h1 {
+  font-family: 'Glass Houses', Helvetica, Arial, sans-serif;
+  letter-spacing: 64px;
+
+}
+
+.video-row {
+    background-color: #222;
+}
+
+.video-feed-wrapper {
+  .nametag-wrapper {
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -10px;
+      right: -10px;
+      z-index: -1;
+      border-bottom: 5px ridge #aaa;
+      background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+        -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+        -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+        
+        linear-gradient(180deg, hsl(0,0%,78%)  0%, 
+        hsl(0,0%,90%) 47%, 
+        hsl(0,0%,78%) 53%,
+        hsl(0,0%,70%)100%);
+    }
+
+    &:before {
+      transform: skew(30deg, 0);
+      right: 0px;
+      border-left: 5px ridge #aaa;
+    }
+
+    &:after {
+      transform: skew(-30deg, 0);
+      left: 0px;
+      border-right: 5px ridge #aaa;
+    }
+  }
+
+  .local-button-row {
+    padding-right: 25px;
+    .button-row-backdrop {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 5px;
+      right: -20px;
+      // border-left: 5px ridge #aaa;
+      border-bottom-left-radius: 20px;
+      overflow: hidden;
+      &:before {
+        content: '';
+        background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+          -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+          -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+          
+          linear-gradient(180deg, hsl(0,0%,78%)  0%, 
+          hsl(0,0%,90%) 47%, 
+          hsl(0,0%,78%) 53%,
+          hsl(0,0%,70%)100%);
+        position: absolute;
+        top: 0;
+        bottom:-5px;
+        left: -20px;
+        right: 20px;
+        border: 5px ridge #aaa;
+        transform: skew(30deg, 0);
+        z-index:0;
+      }
+    }
+  }
+}
+
+.video-wrapper {
+  border-top: 5px ridge #aaa;
+  border-left: 5px ridge #aaa;
+  border-bottom: 5px groove #aaa;
+  border-right: 5px groove #aaa;
+  border-radius: 20px;
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // background: rgba(255,0,0,0.25);
+    background: repeating-linear-gradient(rgba(64, 154, 245, 0.3) 0px, rgba(96, 224, 156, 0.15) 4px, rgba(96, 224, 156, 0.15) 6px,  rgba(64, 154, 245, 0.3) 10px);
+    z-index: 2;
+    animation: video-bars 2s ease-in-out alternate infinite;
+  }
+}
+
+@keyframes video-bars {
+  0% {
+    background-position-y: 0;
+  }
+
+  100% {
+    background-position-y: 10px;
+  }
+}
+
+.transit-marker {
+  font-family: 'Press Start 2P', monospace;
+  color: transparent;
+  background: repeating-linear-gradient(red 0px, transparent 4px, transparent 5px, red 8px);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: transit-pulse 1.5s infinite;
+}
+
+@keyframes transit-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.attendeevideofeed-component {
+  border-top: 5px ridge #aaa;
+  border-left: 5px ridge #aaa;
+  border-bottom: 5px groove #aaa;
+  border-right: 5px groove #aaa;
+  border-radius: 20px;
+  
+  .button-row {
+    padding-right: 25px;
+    border-left: 5px ridge #aaa;
+    &:before {
+      content: '';
+      background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+        -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+        -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+        
+        linear-gradient(180deg, hsl(0,0%,78%)  0%, 
+        hsl(0,0%,90%) 47%, 
+        hsl(0,0%,78%) 53%,
+        hsl(0,0%,70%)100%);
+      position: absolute;
+      top: 0;
+      bottom:-5px;
+      left: -20px;
+      right: 10px;
+      border: 5px ridge #aaa;
+      transform: skew(30deg, 0);
+    }
+  }
+}

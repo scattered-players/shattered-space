@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background: url(/media/flyer-background.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#example-widget-container {
+  flex-grow: 1;
+  margin: 5vh;
+}
+
+@media (max-width: 768px) {
+  #example-widget-container {
+    flex-grow: 1;
+    margin: 0 1vh;
+  }
+}

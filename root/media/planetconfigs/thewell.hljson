@@ -1,0 +1,44 @@
+{
+    preview: {
+        light: {
+            position: [1,1,1]
+            color: [1,1,1]
+            ambient: [0,0,0]
+            specularFalloff: 16
+        }
+    }
+    texture: {
+        seed: thewell
+        resolution: 2048
+        heightGradient: [
+            {val: [0.941,0.765,0.38], stop: 0.65}
+            {val: [0.769,0.671,0.184], stop: 0.66}
+            {val: [0.769,0.671,0.184], stop: 0.75}
+            {val: [0.941,0.584,0.38], stop: 0.76}
+            {val: [0.941,0.584,0.38], stop: 0.85}
+            {val: [0.769,0.671,0.184], stop: 0.86}
+            {val: [0.769,0.671,0.184], stop: 0.95}
+            {val: [0.941,0.584,0.38], stop: 0.96}
+        ]
+        normalGradient: [
+            {val: 0.01, stop: 0.0}
+        ]
+        specularGradient: [
+            {val: 1, stop: 0.5}
+        ]
+        emissionGradient: [
+            {val: [0,0,0], stop: 0.9}
+            {val: [0,0,0.7], stop: 0.91}
+        ]
+        scale: [1,1,5]
+        falloff: 0.5
+        detail: 10
+        clouds: {
+            color: [0.8,0.8,1]
+            scale: [1,1,5]
+            falloff: 3.0
+            opacity: 2.0
+            detail: 10
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    preview: {
+        light: {
+            position: [1,1,1]
+            color: [1,1,1]
+            ambient: [0,0,0]
+            specularFalloff: 16
+        }
+    }
+    texture: {
+        seed: amaranthine
+        resolution: 2048
+        heightGradient: [
+            {val: [0.25, 0.25, 0.25], stop: 0}
+            {val: [1,1,1], stop: 1.0}
+        ]
+        normalGradient: [
+            {val: 0.01, stop: 0.0}
+        ]
+        scale: [5,5,5]
+        falloff: 1.0
+        detail: 10
+    }
+}

@@ -1,0 +1,31 @@
+export default {
+  Neptunish:'Neptunish',
+  Boriken:'Boriken',
+  Artemis:'Artemis',
+  BivBoy:'BivBoy',
+  Station9:'Station9',
+  TLW:'TLW',
+  Skavo:'Skavo',
+  Station4th:'Station4th',
+  Sorak:'Sorak',
+  CosmicRapids:'CosmicRapids',
+  Wilbumore:'Wilbumore',
+  Krashcan:'Krashcan',
+  AskrYggdrasils:'AskrYggdrasils',
+  eu24:'eu24',
+  Mnemea:'Mnemea',
+  Amaranthine:'Amaranthine',
+  Stedwrald:'Stedwrald'
+
+  // Terra:'Terra',
+  // Europa:'Europa',
+  // Neptunish:'Neptunish',
+  // Eve:'Eve',
+  // Mordor:'Mordor',
+  // Minmus:'Minmus',
+  // RedGreen:'RedGreen',
+  // HotJupiter:'HotJupiter',
+  // Somethin:'Somethin',
+  // Ruby:'Ruby',
+  // Woomera:'Woomera'
+}

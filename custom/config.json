@@ -1,0 +1,13 @@
+{
+  "SHOW_TITLE": "Shattered Space",
+  "COMPANY_EMAIL": "thescatteredplayers@gmail.com",
+  "DOMAIN": "mirrors.live",
+  "USER_AVATAR": "/media/star-jockey-insignia.png",
+  "INTRO_VIDEO": "/media/video/intro.mp4",
+  "NAV_OVERLAY_VIDEO": "/media/video/glitch.webm",
+  "NAV_ARRIVAL_SOUND": "/media/audio/Nav-Arrival.mp3",
+  "NAV_DEPARTURE_SOUND": "/media/audio/Nav-Departure.mp3",
+  "NAV_BACKGROUND_MUSIC": "/media/audio/nav.mp3",
+  "TRANSIT_TEXT": "In Transit",
+  "MUI_THEME": "light"
+}

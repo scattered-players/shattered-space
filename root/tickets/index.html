@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Tickets to Shattered Space</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- <button id="example-widget-trigger" type="button">Buy Tickets to Shattered Space</button> -->
+  <div id="example-widget-container"></div>
+  <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+  <script>
+    var exampleCallback = function() {
+      console.log("Order complete!");
+    };
+
+    // window.EBWidgets.createWidget({
+    //   widgetType: "checkout",
+    //   eventId: "103977166504",
+    //   modal: true,
+    //   modalTriggerElementId: "example-widget-trigger",
+    //   onOrderComplete: exampleCallback
+    // });
+  window.EBWidgets.createWidget({
+    widgetType: "checkout",
+    eventId: "103977166504",
+    iframeContainerId: "example-widget-container",
+    iframeContainerHeight: window.innerWidth > 768 ? window.innerHeight*0.9 : window.innerHeight,
+    // iFrameAutoAdapt: 90,
+    onOrderComplete: exampleCallback
+  });
+  </script>
+</body>
+</html>
